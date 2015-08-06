@@ -42,7 +42,8 @@ com.geertwille = {
 
             var root = artboard;
 
-            this.hideLayers(root, layer);
+            // cause bug
+            // this.hideLayers(root, layer);
 
             // Process the slice
             this.processSlice(layer);
