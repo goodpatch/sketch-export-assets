@@ -99,10 +99,12 @@ com.geertwille = {
             var frame = [slice frame],
             sliceName = [slice name];
 
-        if (this.type == "android") {
-            sliceName = sliceName.trim().toLowerCase().replace(/\s/,'_').replace(/-+/g,'_').replace(/[^0-9a-z_]/,'');
-        }
+        // make Japanese layer name missing character
+        // if (this.type == "android") {
+        //     sliceName = sliceName.trim().toLowerCase().replace(/\s/,'_').replace(/-+/g,'_').replace(/[^0-9a-z_]/,'');
+        // }
 
+        log('name:' + sliceName)
         for (var i = 0; i < this.factors.length; i++) {
             var fileName = '',
                 name     = this.factors[i].folder,
