@@ -3,7 +3,7 @@
     "description": "Plugins to export assets to different platforms",
     "author": "Geert Wille",
     "homepage": "https://github.com/GeertWille/sketch-export-assets",
-    "version": 2.1,
+    "version": 2.18,
     "identifier": "com.geertwille.sketch.export-assets",
     "compatibleVersion": 3,
     "bundleVersion": 1,
@@ -12,19 +12,25 @@
             {
                 "name": "Export iOS Assets",
                 "identifier": "export-assets-ios",
-                "shortcut": "ctrl alt shift 1",
+                "shortcut": "ctrl alt shift 3",
                 "script": "Export iOS Assets.sketchscript"
             },
             {
-                "name": "Export Android Assets",
-                "identifier": "export-assets-android",
+                "name": "Export Android Assets(drawable-)",
+                "identifier": "export-assets-android-drawable",
+                "shortcut": "ctrl alt shift 1",
+                "script": "Export Android Assets Drawable.sketchscript"
+            },
+            {
+                "name": "Export Android Assets(mipmap-)",
+                "identifier": "export-assets-android-mipmap",
                 "shortcut": "ctrl alt shift 2",
-                "script": "Export Android Assets.sketchscript"
+                "script": "Export Android Assets Mipmap.sketchscript"
             },
             {
                 "name": "Export WindowsPhone Assets",
                 "identifier": "export-assets-wp",
-                "shortcut": "ctrl alt shift 3",
+                "shortcut": "ctrl alt shift 4",
                 "script": "Export WindowsPhone Assets.sketchscript"
             }
         ],
@@ -32,7 +38,8 @@
         {
             "items":
             [
-                "export-assets-android",
+                "export-assets-android-drawable",
+                "export-assets-android-mipmap",
                 "export-assets-ios",
                 "export-assets-wp"
             ]
